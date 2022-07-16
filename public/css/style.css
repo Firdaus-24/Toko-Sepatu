@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+a .navbar-brand{
+    color:aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-sizing: border-box;
+    background-color: #d1690c;
+    padding:1px 5px 1px 5px;
+    border-radius: 5px;
+}
+a .navbar-brand span{
+    color: whitesmoke;
+}
+.dashboard h1{
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.row no-gutters img{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.tumbnail{
+    position: relative;
+    max-width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009)
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 300px;
+    margin: 0 20px;
+    background: #fff;
+
+}
+.swiper-container-3d .swiper-slide-shadow-left, 
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image:none;
+}
+.card-menu{
+    width: auto;
+    height: 280px;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    transition: 0.5s;
+}
+.card-menu:hover{
+    top:0;
+}
+.tumbnail .card{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: #333;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.tumbnail .card .layer{
+    position: absolute;
+    top:calc(100% - 2px);
+    left:0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    transition: 0.5s;
+}
+.tumbnail .card:hover .layer{
+    top:0;
+}
+.tumbnail .card .content{
+    position: relative;
+    z-index:2;
+}
+.tumbnail .card .content h3{
+    font-size: 18px;
+    color:whitesmoke;
+}
+.tumbnail .card .content h3 span{
+    color: #03a9f4;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.tumbnail .card:hover .content h3 span{
+    color: whitesmoke;
+
+}
+.imgbox img{
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.tumbnail .card .content p{
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    color: #03a9f4;
+}
+.tumbnail .card:hover .content p{
+    color:whitesmoke;
+}
